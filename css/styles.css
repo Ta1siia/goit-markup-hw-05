@@ -584,7 +584,7 @@ button {
   background-color: #404bbf;
   border: solid 1px transparent;
 }
-.close-popup:hover,
+.close-popup:hover .close-popup-icon,
 .close-popup:focus .close-popup-icon {
   fill: #fff;
 }
@@ -649,6 +649,9 @@ button {
 .text-field:focus ~ .field-icon {
   fill: #4d5ae5;
 }
+.field-wrapper-comment {
+  margin-bottom: 16px;
+}
 .comment-field {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -676,7 +679,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
