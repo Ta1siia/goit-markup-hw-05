@@ -470,6 +470,7 @@ button {
 
 .footer-subscription {
   justify-content: flex-end;
+  margin-left: auto;
 }
 .form-footer-text {
   font-family: "Roboto", sans-serif;
@@ -707,19 +708,24 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: none;
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-right: 8px;
 }
+.tick-icon {
+  fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-checkbox:checked + .terms-label .custom-checkbox .tick-icon {
+  fill: #f4f4fd;
+}
 .input-checkbox:checked + .terms-label .custom-checkbox {
   background-color: #404bbf;
   border-color: #404bbf;
-  fill: #f4f4fd;
 }
+
 .privacy-link {
   line-height: 1.33;
   text-decoration: underline;
